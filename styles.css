@@ -1,1 +1,38 @@
 /*  your css code here. If applicable */
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height:100%;
+}
+.grid-container{
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows:repeat(5,100px);
+	gap:6px;
+}
+
+[class ^= "item"]{
+	color:white;
+	background-color:green;
+	font-size:4vw;
+	display:flex;
+	
+}
+
+.item1{
+	grid-column: 1/5;
+}
+.item2{
+	grid-row:2/6;
+}
+
+.item4{
+	grid-column: 3/5;
+}
+.item5{
+	grid-column:2/4;
+}
+.item10{
+	grid-column:2/5;
+}
